@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="190sp"
+            android:layout_height="200sp"
+            android:layout_marginLeft="80sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="60sp"
+            android:layout_marginBottom="380sp"
+            android:background="@drawable/msglegionlogo" />
+        <Spinner
+            android:layout_width="110sp"
+            android:layout_height="35sp"
+            android:id="@+id/spinner"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="210sp">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="170sp"
+            android:layout_height="49sp"
+            android:layout_marginLeft="160sp"
+            android:layout_marginTop="200sp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="number" />
+
+       <ImageButton
+           android:layout_width="70sp"
+           android:layout_height="60sp"
+           android:id="@+id/send"
+           android:background="@drawable/noun_login_2059065"
+           android:layout_marginLeft="140sp"
+           android:layout_marginTop="22sp"
+           android:scaleType="center"
+           android:layout_below="@id/phoneNumber"/>
+
+    </RelativeLayout>
+</LinearLayout>

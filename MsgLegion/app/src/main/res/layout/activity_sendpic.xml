@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sendpic">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="300sp"
+            android:layout_marginLeft="45sp"
+            android:layout_height="300sp"
+            android:background="@drawable/bulb0"
+            android:id="@+id/bulb"/>
+        <ImageButton
+            android:layout_width="70sp"
+            android:layout_height="50sp"
+            android:layout_below="@+id/bulb"
+            android:id="@+id/bulbonoff"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/noun_buttonoff"
+            android:layout_marginLeft="150sp"/>
+        <ImageButton
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:id="@+id/signout"
+            android:layout_marginTop="30sp"
+            android:layout_below="@id/bulbonoff"
+            android:layout_marginLeft="150sp"
+
+            android:background="@drawable/noun_logout"/>
+    </RelativeLayout>
+
+</LinearLayout>

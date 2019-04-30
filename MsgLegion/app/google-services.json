@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "120536191265",
+    "firebase_url": "https://x8-weighty-diorama-6.firebaseio.com",
+    "project_id": "x8-weighty-diorama-6",
+    "storage_bucket": "x8-weighty-diorama-6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120536191265:android:27d8c60d00deb88b",
+        "android_client_info": {
+          "package_name": "com.midas.junior.msglegion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120536191265-fpkm658fm0a6o0jqalash3akarfrhcfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.midas.junior.msglegion",
+            "certificate_hash": "1eaa8a27721ad65ec141f9eb930518934c774dc7"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyrL-5q3P8LcIkeBLrOxf9d-0g1AdKaEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120536191265-gip33ll1qjcsjco7c78rmj01l0mno7do.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
