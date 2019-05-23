@@ -59,7 +59,7 @@ public class Verification extends AppCompatActivity {
                    @Override
                    public void onComplete( Task<AuthResult> task) {
                        if(task.isSuccessful()){
-                           Intent i=new Intent(Verification.this,sendpic.class);
+                           Intent i=new Intent(Verification.this,Chat.class);
                            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                            startActivity(i);
 
