@@ -18,6 +18,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.Picasso;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -27,19 +29,21 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Chat extends AppCompatActivity {
-    ListView listViewR;
-    ListView listViewL;
     RelativeLayout Lout ;
     private RecyclerView rv;
 
     FirebaseDatabase datatbase;
     DatabaseReference ref;
     private int count;
+    ImageView chit;
+    ImageView shubhi;
 
     List<Message> listR;
     ArrayList<Message> listL;
     MessageAdapter adaptorR;
-    private ImageView signout1;
+    private RelativeLayout signout1;
+    String url="https://scontent.fbho2-1.fna.fbcdn.net/v/t1.0-9/36175961_989073857926206_4455089659684323328_n.jpg?_nc_cat=100&_nc_oc=AQlBHcEfDjbAwASzaaPybRHwjibHKI08LCvx2-hJgL2WWhBena5WBQRdswHFZinwxHo&_nc_ht=scontent.fbho2-1.fna&oh=7e8aa673857d5e624ee388b1e367d13c&oe=5D9FC431";
+    String url2="https://scontent.fbho2-1.fna.fbcdn.net/v/t1.0-9/42748872_2164395857170934_6760073400560910336_n.jpg?_nc_cat=110&_nc_oc=AQn_gh1OXTtTbIsrOUYCnxCL6X_bXBBNG75A5BAIvzrelcWpt-Cn0eA1pAti9JphqVs&_nc_ht=scontent.fbho2-1.fna&oh=bf9c09b5a6bb9f3cb5f391fe444b7f24&oe=5D9B99B5";
 
 
 
@@ -50,10 +54,13 @@ public class Chat extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
         rv=findViewById(R.id.chatui);
-        signout1=findViewById(R.id.signout);
+        signout1=findViewById(R.id.signout1);
         Lout = findViewById(R.id.touch);
+        chit=findViewById(R.id.chit);
+        shubhi=findViewById(R.id.shubhi);
 
 
+        loadImageFromuri(url,url2);
 
 
 
@@ -83,7 +90,34 @@ public class Chat extends AppCompatActivity {
 
     }
 
+    private void loadImageFromuri(String url,String url2) {
+        Picasso.with(this).load(url).placeholder(R.mipmap.ic_launcher)
+                .error(R.mipmap.ic_launcher)
+                .into(chit, new Callback() {
+                    @Override
+                    public void onSuccess() {
 
+                    }
+
+                    @Override
+                    public void onError() {
+                        Toast.makeText(Chat.this,"Couldn't load the Image",Toast.LENGTH_LONG).show();
+                    }
+                });
+        Picasso.with(this).load(url2).placeholder(R.mipmap.ic_launcher)
+                .error(R.mipmap.ic_launcher)
+                .into(shubhi, new Callback() {
+                    @Override
+                    public void onSuccess() {
+
+                    }
+
+                    @Override
+                    public void onError() {
+                Toast.makeText(Chat.this,"Couldn't load the Image",Toast.LENGTH_LONG).show();
+                    }
+                });
+    }
 
 
     private void ToCall() {

@@ -18,47 +18,62 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/Rlist">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chitransh"
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bulb0"
                 android:textStyle="bold"
+                android:id="@+id/chit"
                 android:textSize="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:textColor="#00120b"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Shubhi"
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/shubhi"
+                android:background="@drawable/bulb0"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:textSize="20dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 android:textColor="#00120b"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="20dp"/>
-            <ImageView
-                android:layout_width="35sp"
-                android:layout_height="35sp"
-                android:id="@+id/signout"
-                android:layout_marginLeft="150dp"
-                android:background="@drawable/noun_logout"
-                tools:ignore="ContentDescription" />
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="140dp"
+                android:id="@+id/signout1">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/img1"
+                    android:background="@drawable/noun_logout"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Sign Out"
+                    android:id="@+id/txt1"
+                    android:layout_toRightOf="@id/img1"/>
+            </RelativeLayout>
 
 
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="25dp"
-                android:layout_marginTop="30dp"
-                android:id="@+id/chatui"/>
+                android:paddingTop="30dp"
+                android:layout_marginTop="65dp"
+                android:id="@+id/chatui"
+                android:hapticFeedbackEnabled="true"/>
 
 
             <RelativeLayout
                 android:id="@+id/touch"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingBottom="695dp"
+                android:layout_marginTop="35dp"
+                android:paddingBottom="1000dp"
                 android:scrollbarAlwaysDrawVerticalTrack="true">
 
 
